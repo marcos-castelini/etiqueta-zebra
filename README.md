@@ -1,2 +1,2 @@
 # etiqueta-zebra
-Sistema para impressão de etiquetas em impressoras Zebra
+Sistema simples para impressão de etiquetas para clínicas em impressoras Zebra.
