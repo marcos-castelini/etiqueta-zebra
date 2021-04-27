@@ -1,2 +1,2 @@
 # etiqueta-zebra
-Sistema simples para impressão de etiquetas para clínicas em impressoras Zebra.
+Sistema simples em Java para impressão de etiquetas para clínicas em impressoras Zebra.
