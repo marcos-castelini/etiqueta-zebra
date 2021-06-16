@@ -1,5 +1,7 @@
 package br.com.marcoscastelini.util;
 
+import org.apache.commons.io.FilenameUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -53,7 +55,7 @@ public class Configuracao {
     public static void reiniciarAplicacao() throws IOException {
         String SUN_JAVA_COMMAND = "sun.java.command";
         try {
-            String java = System.getProperty("java.home") + "/bin/java";
+            String java = FilenameUtils.separatorsToSystem(System.getProperty("java.home") + "/bin/java");
             List<String> vmArguments = ManagementFactory.getRuntimeMXBean().getInputArguments();
             StringBuilder vmArgsOneLine = new StringBuilder();
             for (String arg : vmArguments) {
